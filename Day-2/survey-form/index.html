@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link href='style.css' rel='stylesheet'>
+    
+</head>
+<body>
+    <h1 id = 'title'>Survey Form</h1>
+    <!-- <p id  = 'description'>sample survey form</p> -->
+
+    <form id = 'survey-form'>
+        <label for='name' id ='name-label'>Name : </label><input type="text" id='name' class='name' placeholder="Enter your name" required><br>
+
+        <label for='email' id ='email-label'>Email : </label><input type="email" id = 'email' class='email' placeholder="Enter your email" required><br>
+
+        <label for='number' id ='number-label'>Age : </label><input type="number" id = 'number' class='number' placeholder="Enter your number" min='12' max='60'><br>
+        <label for='country'>where do you reside: 
+        <select id='dropdown'>
+  
+            <option name='country'>India</option>
+            <option name='country'>UK</option>
+            <option name='country'>USA</option>
+        </select><br>
+        <label >Gender :
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="female">other</label>
+        </label>
+        <br>
+        <label  for='checkbox'>Select your favourite food:</label><br>
+        <label for="food1"> Biryani </label>
+        <input type="checkbox" id="food1" name ='food1' value="Biryani">
+
+        <label for="food2"> Chicken tikka </label>
+        <input type="checkbox" id="food2" name ='food2' value="Chicken tikka">
+
+        <label for="food3"> Dosa </label>
+        <input type="checkbox" id="food3" name ='food3' value="Dosa">
+
+        <label for="food4"> Pani Puri </label>
+        <input type="checkbox" id="food4" name ='food4' value="Pani Puri">
+        <br>
+        <label class='comment'>Additional Comments : </label><br><textarea rows='3' cols='30'></textarea><br>
+        <input type="submit" id ='submit'>
+    </form>
+    
+</body>
+</html>
