@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+body {
+  background: url('./assets/images/bg01.jpg') no-repeat center center fixed;
+  background-size: cover;
+  /* overflow: hidden; */
+  font-family: 'Roboto', sans-serif;
+  /* border: 1px solid gold; */
+  /* z-index: 101; */
+}
+
+.overlay {
+  background: #071412c7;
+  height: 100%;
+  /* z-index: 100; */
+  /* overflow: hidden; */
+}
+
+.container {
+  /* border: 1px solid red; */
+  height: 100%;
+  /* width: 30%; */
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  margin-left: 5rem;
+}
+
+.container h1 {
+  color: #ffffff;
+  font-size: 3rem;
+}
+
+.container p {
+  /* width: 80%; */
+  font-weight: 500;
+  margin: 1rem 0;
+  line-height: 25px;
+  color: rgb(148, 148, 148);
+}
+
+.email {
+  display: flex;
+}
+
+.email input {
+  background-color: transparent;
+  border: 1px solid grey;
+  height: 2.5rem;
+  width: 15rem;
+  padding: 10px;
+  margin-right: 1rem;
+  border-radius: 5px;
+  color: rgb(148, 148, 148);
+}
+
+.email input::placeholder {
+  font-weight: 500;
+}
+
+.email input:focus {
+  outline: none;
+  border: 1px solid #1cb495;
+  -webkit-box-shadow: 0px 0px 37px 2px rgba(28, 180, 149, 0.4);
+  -moz-box-shadow: 0px 0px 37px 2px rgba(28, 180, 149, 0.4);
+  box-shadow: 0px 0px 37px 2px rgba(28, 180, 149, 0.4);
+}
+
+.email button {
+  background-color: #1cb495;
+  color: white;
+  width: 5rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.section {
+  /* background-color: red; */
+  position: absolute;
+  bottom: 1rem;
+  color: rgb(148, 148, 148);
+}
+
+.icons i {
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  .overlay {
+    text-align: center;
+  }
+
+  .container {
+    width: auto;
+    align-items: center;
+    transform: translateX(-35px);
+  }
+
+  .container p {
+    width: 410px;
+    margin: 2rem 0;
+    line-height: 1.5rem;
+  }
+  .email {
+    justify-content: center;
+  }
+
+  .section {
+    position: relative;
+    bottom: -10rem;
+  }
+}
