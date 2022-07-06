@@ -1,5 +1,7 @@
 # codedamn - Eventually - Stunning HTML5 Landing Page
 
+deployed at: https://mellifluous-figolla-65d325.netlify.app/
+
 ![Design for the project](https://raw.githubusercontent.com/codedamn-projects/eventually-stunning-html5-landing-page/master/assets/desktop-design-non-fs.jpg)
 
 ## Hello developer!
