@@ -105,6 +105,11 @@ ul li:hover {
   align-items: center;
 }
 
+.highlight {
+  background-color: var(--orange);
+  color: white;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
