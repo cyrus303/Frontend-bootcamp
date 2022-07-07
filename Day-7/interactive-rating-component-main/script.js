@@ -1,8 +1,19 @@
-const ratingContainer = document.getElementById('rating-container');
+const numbers = document.querySelectorAll('.number');
+const submitBtn = document.querySelector('.submit');
 
-ratingContainer.addEventListener('click', (e) => {
-  if (e.target.className === 'number') {
-    console.log(e.target.classList);
-    e.target.classList.toggle('highlight');
-  }
+numbers.forEach((number) => {
+  number.addEventListener('click', (e) => {
+    revertStyle();
+    number.classList.toggle('highlight');
+  });
+});
+
+function revertStyle() {
+  numbers.forEach((number) => {
+    number.classList.remove('highlight');
+  });
+}
+
+submitBtn.addEventListener('click', (e) => {
+  submitBtn.classList.toggle('clicked');
 });

@@ -87,8 +87,8 @@ ul li:hover {
 }
 
 .submit {
-  background-color: var(--White);
-  color: var(--orange);
+  background-color: var(--orange);
+  color: var(--white);
   font-size: 0.9rem;
   font-weight: 700;
   letter-spacing: 3px;
@@ -103,11 +103,18 @@ ul li:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.1s ease-in;
 }
 
 .highlight {
   background-color: var(--orange);
   color: white;
+}
+
+.clicked {
+  border: 1px solid var(--orange);
+  background-color: rgba(0, 0, 0, 0.336);
+  color: var(--orange);
 }
 
 .attribution {
