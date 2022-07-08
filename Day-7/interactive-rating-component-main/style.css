@@ -146,11 +146,3 @@ ul li:hover {
   border-radius: 15px;
   color: var(--orange);
 }
-
-@media screen and (max-width: 600px) {
-  .main-container {
-    width: 350px;
-    height: 380px;
-    padding: 1rem;
-  }
-}
