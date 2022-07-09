@@ -63,6 +63,7 @@ body {
   background-color: white;
   margin: 0.2rem;
   transition: all 0.1s ease-in;
+  cursor: pointer;
 }
 
 /* animation */
@@ -144,6 +145,7 @@ button {
   color: #9196ea;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .all-cards {
@@ -171,4 +173,33 @@ button {
 
 .normal ul li:last-child {
   border-bottom: 1px solid var(--lightgrayishblue);
+}
+
+@media screen and (max-width: 1000px) {
+  .main-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .all-cards {
+    flex-direction: column;
+  }
+
+  body {
+    height: 100%;
+  }
+
+  .title {
+    margin-top: 5rem;
+  }
+  .card-container {
+    margin: 1rem;
+  }
+
+  .normal {
+    transform: scale(1);
+  }
 }
