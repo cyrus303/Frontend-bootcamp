@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <script
+      src="https://kit.fontawesome.com/a6c61975fc.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Tip calculator app | Frontend Mentor</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <p class="title">
+      spli <br />
+      tter
+    </p>
+    <div class="main-container">
+      <div class="left">
+        <div class="bill">
+          <small>Bill</small>
+          <i class="fa-solid fa-dollar-sign"></i>
+          <input type="number" id="bill-input" />
+        </div>
+
+        <div class="select-tip">
+          <small>Select Tip %</small>
+          <div class="grid-container">
+            <button class="btn">5%</button>
+            <button class="btn">10%</button>
+            <button class="btn">15%</button>
+            <button class="btn">25%</button>
+            <button class="btn">30%</button>
+            <button class="btn">50%</button>
+            <!-- <input
+              type="number"
+              placeholder="Custom"
+              class="btn"
+              id="custom-percentage-input"
+            /> -->
+          </div>
+        </div>
+
+        <div class="people">
+          <small>Number of People</small>
+          <i class="fa-solid fa-user-large"></i>
+          <input type="number" id="people-count" />
+        </div>
+
+        <button id="calculate">Calculate</button>
+      </div>
+
+      <div class="right">
+        <div class="tip-amount">
+          <div>
+            Tip Amount <br />
+            <span class="dim">/ person</span>
+          </div>
+          <div class="tip-value" id="tip-value"><span>$</span>0</div>
+        </div>
+
+        <div class="total">
+          <div>Total Tip</div>
+          <div class="total-value" id="total-value"><span>$</span>0</div>
+        </div>
+        <button id="reset">Reset</button>
+      </div>
+    </div>
+  </body>
+</html>
