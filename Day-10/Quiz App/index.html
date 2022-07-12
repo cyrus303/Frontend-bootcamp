@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Quiz Project | Codedamn</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <script src="https://kit.fontawesome.com/a6c61975fc.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <a id=leaderboard>View Highscores <i class="fas fa-hand-point-left fa-lg"></i>
+        </i></a> 
+
+        <div id="countdown"></div>
+        
+    </header>
+    <main>
+        <div class="main-container">
+            <div class="ticks">
+
+            </div>
+            <div class="first-page ">
+                <h1>coding quiz challenge</h1>
+                <p>Try to answer the follwing code-related questions within the time limit</p>
+                <p>Keep in mind that each incorrect answer will penalize your score/time by 10 seconds</p>
+                <button id="start-quiz">Start Quiz</button>
+            </div>
+            <div class="quiz-container hide" id="quiz">
+                <div class="quiz-header ">
+                  <h2 id="question">Question Text</h2>
+                  <ul>
+                    <li>
+                      <input type="radio" id="a" name="answer" />
+                      <label id="a_text" for="a">Question</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="b" name="answer" />
+                      <label id="b_text" for="b">Question</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="c" name="answer" />
+                      <label id="c_text" for="c">Question</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="d" name="answer" />
+                      <label id="d_text" for="d">Question</label>
+                    </li>
+                  </ul>
+                </div>
+          
+                <button id="submit">Submit</button>
+              </div>
+
+              <div class="highscore">
+
+
+              </div>
+        </div>
+        
+    </main>
+
+</body>
+
+</html>
