@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* NavBar Starts */
+
+.navbar {
+  background-color: #f55a5a;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.navbar i {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+/* NavBar Ends */
+
+/* Card starts */
+
+.card-container {
+  display: flex;
+  height: 15rem;
+  width: 35rem;
+  /* border: 1px solid salmon; */
+  margin: 0 auto;
+  margin-top: 2rem;
+
+  border-radius: 5px;
+  box-shadow: 3px 13px 62px -19px rgba(0, 0, 0, 0.32);
+}
+
+.card-container .left img {
+  width: 200px;
+  height: 100%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.card-container .right .location {
+  display: flex;
+  /* border: 1px solid brown; */
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.card-container .right {
+  margin-left: 1rem;
+}
+
+.location i {
+  color: #f55a5a;
+  margin-right: 0.4rem;
+}
+
+.location p {
+  letter-spacing: 2px;
+  margin-right: 1rem;
+}
+
+.location small {
+  color: gray;
+  text-decoration: underline;
+}
+
+.right {
+  margin-top: 1rem;
+}
+
+.right .title {
+  margin-top: 0.2rem;
+}
+
+.right .dates {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.right .description {
+  font-size: 0.9rem;
+  width: 80%;
+}
+
+/* Card ends */ ;
