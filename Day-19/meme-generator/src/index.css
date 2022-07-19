@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: #e5e5e5;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.main-container {
+  width: 850px;
+  height: 80vh;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+/* nav-container starts */
+
+.nav-container {
+  background-color: #a4508b;
+  background-image: linear-gradient(270deg, #9220c7 0%, #5f0a87 45%);
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.nav-container .left {
+  display: flex;
+  align-items: center;
+}
+
+.left img {
+  height: 50px;
+}
+
+.left p {
+  margin-left: 1rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+}
+/* nav-container ends */
+
+/* form-container Starts */
+
+.form-container {
+  /* border: 1px solid red; */
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container .input-tags {
+  display: flex;
+  justify-content: space-around;
+}
+
+.input-tags input {
+  height: 2.5rem;
+  width: 45%;
+  border: 2px solid rgba(128, 128, 128, 0.267);
+  border-radius: 5px;
+  padding: 1rem;
+  outline: none;
+}
+
+.input-tags input:focus {
+  border: 2px solid #5f0a87;
+}
+
+.btn {
+  padding: 1.2rem;
+}
+
+.btn button {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #a4508b;
+  background-image: linear-gradient(270deg, #9220c7 0%, #5f0a87 45%);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 3px 3px 20px -3px rgba(0, 0, 0, 0.56);
+  cursor: pointer;
+}
+
+.btn button i {
+  position: absolute;
+  top: 19px;
+  right: 33%;
+}
+
+/* form-container Ends */ ;
