@@ -115,4 +115,10 @@ code {
   right: 33%;
 }
 
-/* form-container Ends */ ;
+/* form-container Ends */
+
+/* memeimage starts */
+.memeImage {
+  max-width: 100%;
+}
+/* memeimage ends */
