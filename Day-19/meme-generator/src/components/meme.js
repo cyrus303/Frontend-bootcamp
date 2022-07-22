@@ -24,11 +24,32 @@ function Meme() {
     });
   }
 
+  function handleChange(event) {
+    const { name, value } = event.target;
+    setMemeImage((prevData) => {
+      return { ...prevData, [name]: value };
+    });
+  }
+  console.log(memeImage);
   return (
     <div className="form-container">
       <div className="input-tags">
-        <input type="text" className="sen1" placeholder="First Sentence" />
-        <input type="text" className="sen2" placeholder="Second Sentence" />
+        <input
+          type="text"
+          className="sen1"
+          placeholder="First Sentence"
+          name="topText"
+          value={memeImage.topText}
+          onChange={handleChange}
+        />
+        <input
+          type="text"
+          className="sen2"
+          placeholder="Second Sentence"
+          name="bottomText"
+          value={memeImage.bottomText}
+          onChange={handleChange}
+        />
       </div>
       <div className="btn">
         <button onClick={getMemeImage}>
@@ -36,7 +57,11 @@ function Meme() {
         </button>
       </div>
 
-      <img src={memeImage.randomImage} alt="" className="memeImage" />
+      <div className="meme">
+        <img src={memeImage.randomImage} className="meme--image" alt="" />
+        <h2 className="meme--text top">{memeImage.topText}</h2>
+        <h2 className="meme--text bottom">{memeImage.bottomText}</h2>
+      </div>
     </div>
   );
 }
