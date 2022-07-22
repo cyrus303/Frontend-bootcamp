@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid red; */
+  padding: 2rem;
+}
+
+/* Navbar Starts */
+
+.navbar-container {
+  /* border: 1px solid red; */
+  width: 750px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #537895;
+  background-image: linear-gradient(315deg, #537895 0%, #09203f 74%);
+  color: white;
+
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+}
+
+.left img {
+  width: 3rem;
+  margin-right: 1rem;
+}
+
+.navbar-container p {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.right p {
+  font-weight: normal;
+}
+
+/* Navbar Ends */
+
+/* Form Starts */
+
+.form-container {
+  /* border: 1px solid red; */
+  width: 750px;
+  padding: 2rem 2rem 1rem 2rem;
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+
+  box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.24);
+}
+
+.form-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem 1rem;
+  width: 100%;
+  grid-template-areas:
+    'sent-1 sent-2'
+    'btn btn';
+}
+.sent-1 {
+  grid-area: sent-1;
+  padding: 0.5rem;
+  outline: none;
+  border: 1px solid rgb(209, 209, 209);
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.sent-2 {
+  grid-area: sent-2;
+  padding: 0.5rem;
+  outline: none;
+  border: 1px solid rgb(209, 209, 209);
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.btn {
+  grid-area: btn;
+  background-color: #537895;
+  background-image: linear-gradient(315deg, #537895 0%, #09203f 74%);
+  color: white;
+  font-weight: normal;
+  font-size: 1.1rem;
+  padding: 0.6rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.form-container img {
+  width: 100%;
+  max-width: 100%;
+  max-height: 600px;
+  margin-top: 2rem;
+  border-radius: 5px;
+}
+
+/* Form Ends */
+
+.form-bottom {
+  position: relative;
+}
+
+.meme--image {
+  max-width: 100%;
+  border-radius: 3px;
+}
+
+.meme--text {
+  position: absolute;
+  max-width: 80%;
+  overflow-wrap: break-word;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 45px 0 25px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
+}
