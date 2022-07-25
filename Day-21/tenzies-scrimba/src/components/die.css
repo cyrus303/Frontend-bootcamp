@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.die-container {
+  background-color: black;
+  height: 3.5rem;
+  width: 3.5rem;
+  background: #ffffff;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 3.81277px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+p {
+  color: #2b283a;
+  font-size: 1.5rem;
+  font-weight: 700;
+  /* font-family: 'Karla'; */
+}
