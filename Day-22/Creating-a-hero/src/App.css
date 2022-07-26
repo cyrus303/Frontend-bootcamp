@@ -1,0 +1,43 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+* {
+  background-color: #242424;
+  color: whitesmoke;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* border: 1px solid red; */
+  /* flex-direction: column; */
+}
+
+input {
+  margin: 10px;
+  outline: #242424;
+  border: 1px solid rgb(104, 104, 104);
+  padding: 0.3rem;
+  /* font-size: 0.8rem; */
+}
+
+button {
+  padding: 0.5rem 1rem;
+  margin: 1rem;
+  border: 2px solid rebeccapurple;
+  color: rgb(148, 74, 223);
+  font-weight: bold;
+  transition: all 0.1s ease-in;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: rebeccapurple;
+  color: #242424;
+}
