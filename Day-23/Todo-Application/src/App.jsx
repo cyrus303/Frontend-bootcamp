@@ -8,7 +8,7 @@ function App() {
   const inputTask = useRef(null);
 
   function addTask() {
-    settodoList([...todoList, currentTask]);
+    settodoList([...todoList, { task: currentTask, completed: false }]);
     inputTask.current.value = '';
     setCurrentTask('');
   }
@@ -16,10 +16,28 @@ function App() {
   function deleteNote(taskToDelete) {
     settodoList(
       todoList.filter((task) => {
-        return task != taskToDelete;
+        return task.task != taskToDelete;
       })
     );
   }
+
+  function completeNote(taskTocomplete) {
+    settodoList(
+      todoList.map((task) => {
+        return task.task === taskTocomplete
+          ? { task: taskTocomplete, completed: true }
+          : { task: task.task, completed: task.completed ? true : false };
+      })
+    );
+  }
+
+  // const handleClick = () => {
+  //   // 👇️ toggle
+  //   setIsActive((current) => !current);
+
+  //   // 👇️ or set to true
+  //   // setIsActive(true);
+  // };
 
   return (
     <div className="App">
@@ -31,7 +49,7 @@ function App() {
           placeholder="Task..."
           onChange={(event) => setCurrentTask(event.target.value)}
         />
-        <button onClick={addTask}>Add Note</button>
+        <button onClick={addTask}>Add Task</button>
       </div>
       <hr />
 
@@ -39,8 +57,23 @@ function App() {
         {todoList.map((value, key) => {
           return (
             <div className="listItems">
-              <li key={key}>{value}</li>
-              <button onClick={() => deleteNote(value)}>Delete</button>
+              <li
+                key={key}
+                style={{
+                  backgroundColor: value.completed ? 'gray' : '',
+                  color: value.completed ? 'white' : '',
+                }}
+                // onClick={handleClick}
+              >
+                {value.task}
+              </li>
+              <button
+                className="complete"
+                onClick={() => completeNote(value.task)}
+              >
+                Complete
+              </button>
+              <button onClick={() => deleteNote(value.task)}>Delete</button>
             </div>
           );
         })}

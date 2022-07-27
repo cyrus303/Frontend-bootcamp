@@ -45,3 +45,8 @@ ul {
   font-size: 1rem;
   font-family: monospace;
 }
+
+.listItems .complete {
+  background-color: rgb(216, 164, 67);
+  margin: 1rem;
+}
